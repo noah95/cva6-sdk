@@ -16,3 +16,7 @@ riscv-fesvr/build
 riscv-isa-sim/build
 riscv-pk/build
 riscv-tests/build
+
+vitetris/**/*.o
+vitetris/config.mk
+
