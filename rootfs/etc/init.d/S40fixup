@@ -1,14 +1,13 @@
 #!/bin/sh
 #
-# fixup        Prepares network and sshd.
+# fixup        Prepares network and dropbear
 #
 
 umask 077
 
 start() {
-	ifconfig eth0 hw ether 00:18:3E:02:E3:7F
-	chown root:root /etc/ssh/ssh_host_*
-	chmod 600 /etc/ssh/ssh_host_*key
+	chown root:root /etc/dropbear/dropbear_*_host_key
+	chmod 600 /etc/dropbear/dropbear_*_host_key
 }
 stop() {
 	echo "OK"
