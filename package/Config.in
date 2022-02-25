@@ -1,0 +1,2 @@
+config BR2_PACKAGE_HERO_PLATFORM
+	string "HERO target platform"

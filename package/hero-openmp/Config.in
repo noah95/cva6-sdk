@@ -1,0 +1,4 @@
+config BR2_PACKAGE_HERO_OPENMP
+	bool "LLVM OpenMP offload plugin for HERO accelerators (Snitch/PULP)"
+	select BR2_PACKAGE_ELFUTILS
+	select BR2_PACKAGE_LIBFFI
