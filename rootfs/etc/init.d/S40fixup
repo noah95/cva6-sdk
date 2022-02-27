@@ -8,6 +8,8 @@ umask 077
 start() {
 	chown root:root /etc/dropbear/dropbear_*_host_key
 	chmod 600 /etc/dropbear/dropbear_*_host_key
+  # Read MAC address from eeprom
+  # dd if=/sys/bus/i2c/drivers/at24/5-0054/eeprom of=/tmp/eeprom.bin bs=1 count=6 skip=35 seek=0
 }
 stop() {
 	echo "OK"
